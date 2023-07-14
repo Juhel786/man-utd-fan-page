@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    background: red;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+}
+
+header {
+    padding: 10px 20px;
+    background: black;
+    align-items: center;
+    font-size: 30px;
+    grid-column: 1 / span 2;
+}
+
+header nav {
+    grid-column: 3 / span 4;
+    justify-self: right;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: red;
+
+}
+
+header h1 {
+    grid-column: span 3;
+    justify-self: center;
+
+}
+
+main {
+    padding: 20px;
+    margin: 60px auto;
+    max-width: 1200px;
+}
+
+main img {
+    grid-column: span 2;
+    width: 100%;
+}
+
+main .welcome {
+    font-size: 20px;
+    grid-column: 3;
+
+}
+
+main h2 {
+    grid-column: span 4;
+}
+
+main .card {
+    grid-column: span 2;
+    text-align: center;
+    background: black;
+    padding: 10px 20px;
+}
+
+.player-image-1 {
+    float: left;
+    position: relative;
+    z-index: 10;
+    width: 100px;
+}
+
+.player-name-1 {
+    float: left;
+    width: 100px;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 5px;
+}
+
+.player-image-2 {
+    float: left;
+    position: relative;
+    z-index: 11;
+    width: 100px;
+}
+
+.player-name-2 {
+    width: 100px;
+    position: absolute;
+    z-index: 50;
+    bottom: 10px; //for placement.
+}
